@@ -18,8 +18,8 @@ from sklearn.neighbors import KNeighborsClassifier
 # In[98]:
 
 
-data = pd.read_csv('C:/Users/Subhiksha/Downloads/Dataset/train/train.csv')
-test = pd.read_csv('C:/Users/Subhiksha/Downloads/Dataset/test/test.csv')
+data = pd.read_csv('../train.csv')
+test = pd.read_csv('../test.csv')
 
 
 # In[100]:
@@ -214,10 +214,3 @@ Submission['PetID'] = test['PetID']
 Submission['AdoptionSpeed'] = ytest
 Submission
 #Submission.to_csv('submission.csv',index = None)
-
-
-# In[ ]:
-
-
-
-
